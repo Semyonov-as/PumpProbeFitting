@@ -1,0 +1,25 @@
+Faraday rotation, Voigt configuration
+ps pulses
+B=11.7 A (x8.5 mT/A)
+PEM 0.5 lambda, 47 kHz 
+pump-lp_0_deg
+Ppump=17mW(600nm)
+pump_angle of incidence = 14 deg
+Probe=4mW(823nm)
+probe_angle of incidence = 14 deg
+probe-lp
+autobalance, phase=-130 deg
+one filters in pump beam
+Overlap at 132.22 mm
+
+
+Delay line scan
+Start 127.2200 mm  
+Stop 490.0000 mm  
+Step 0.5000 mm  
+PEM Retardation (lambda)0
+ (%) 100.0000
+Wavelength (nm) 820.00
+7230 2w 500 mkV 100 ms -130° 2w  1 V 100 ms -1°
+ mm  X1_Calibrated  µVY1_Calibrated  µVADC_1  V Ref_Frequency 1  
+Number of scans 3

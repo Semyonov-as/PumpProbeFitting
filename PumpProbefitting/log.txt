@@ -1,0 +1,1135 @@
+(22:55:02,745)root ---> INFO : Running with __name__ = __main__
+(22:55:02,745)root ---> INFO : Started
+(22:55:02,745)root ---> DEBUG : Trying to read cmd
+(22:55:02,745)root ---> DEBUG : 2
+(22:55:02,745)root ---> DEBUG : ['src/FitPumpProbe.py', '{"zero_position": 129, "AutoFindOverlap": true}']
+(22:55:02,745)root ---> DEBUG : Params loaded successfully {'zero_position': 129, 'AutoFindOverlap': True}
+(22:55:02,964)root ---> DEBUG : Run the FitPumpProbe
+(22:55:02,964)root ---> DEBUG : Setting up parameters
+(22:55:02,964)root ---> DEBUG : {'zero_position': 129, 'AutoFindOverlap': True}
+(22:55:02,965)root ---> DEBUG : Run the Fit_all
+(22:55:02,965)root ---> DEBUG : Run the ReadDataFolder
+(22:55:02,968)root ---> DEBUG : ['15100803Rplasm_pump_600nm_20mW_lp_90_deg_probe_823nm_lp_11.7A_11052021_v11', '18092501R_pump_600nm_12mW_lp_22.5deg_probe_823nm_lp_11.7A_12.052021_v11', '18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v1', '18092501R_pump_598nm_50mW_cp_probe_823nm_lp_11.7A_21042021_v11', '18092502R_pump_600nm_50mW_cp_probe_823nm_lp_11.7A_30042021_v2', '18092501R_pump_600nm_49mW_lp_45deg_probe_823nm_lp_11.7A_26042021_v11', '18092502R_pump_600nm_50mW_cp_probe_823nm_lp_11.7A_30042021_v1', '18092501R_pump_600nm_13mW_lp_67.5deg_probe_823nm_lp_11.7A_12.052021_v11', '18092501R_pump_600nm_31mW_lp_90deg_probe_823nm_lp_11.7A_28042021_v11', '15100803Rplasm_pump_600nm_40mW_cp_probe_823nm_lp_11.7A_11052021_v11', '15100803Rplasm_pump_600nm_20mW_lp_45_deg_probe_823nm_lp_11.7A_12052021_v11', '18092502R_pump_600nm_14mW_lp_22.5_deg_probe_823nm_lp_11.7A_12052021_v11', '18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v21', '18092502R_pump_600nm_23mW_lp_90_deg_probe_823nm_lp_11.7A_30042021_v2', '18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v2', '15100803Rplasm_pump_600nm_17mW_lp_0_deg_probe_823nm_lp_11.7A_12052021_v21', '18092501R_pump_600nm_17mW_lp_0deg_probe_823nm_lp_11.7A_29042021_v11', '18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v11', '18092501R_pump_598nm_50mW_lp_45deg_probe_823nm_lp_11.7A_22042021_v11', '15100803Rplasm_pump_600nm_17mW_lp_0_deg_probe_823nm_lp_11.7A_12052021_v11', '18092501R_pump_600nm_50mW_lp_0deg_probe_823nm_lp_11.7A_26042021_v11', '18092501R_pump_600nm_8mW_lp_22.5deg_probe_823nm_lp_11.7A_12.052021_v11', '18092502R_pump_600nm_15mW_lp_0_deg_probe_823nm_lp_11.7A_04052021_v2', '18092502R_pump_600nm_16mW_lp_67.5_deg_probe_823nm_lp_11.7A_12052021_v11', '18092502R_pump_600nm_15mW_lp_0_deg_probe_823nm_lp_11.7A_04052021_v1', '18092502R_pump_600nm_23mW_lp_90_deg_probe_823nm_lp_11.7A_30042021_v1', '18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v3', '18092502R_pump_600nm_20mW_lp_90_deg_probe_823nm_lp_11.7A_04052021_v3']
+(22:55:02,968)root ---> DEBUG : Fitting the 15100803Rplasm_pump_600nm_20mW_lp_90_deg_probe_823nm_lp_11.7A_11052021_v11
+(22:55:02,969)root ---> DEBUG : Run the ProcessFileFit
+(22:55:02,969)root ---> DEBUG : Run the ReadDataFile
+(22:55:02,969)root ---> DEBUG : Reading the data/15100803Rplasm_pump_600nm_20mW_lp_90_deg_probe_823nm_lp_11.7A_11052021_v11.dat
+(22:55:02,979)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.24     3.35000
+1       127.74     4.45000
+2       128.24     3.70000
+3       128.74     3.30000
+4       129.24     4.45000
+..         ...         ...
+722     488.24     1.31670
+723     488.74     1.96670
+724     489.24     1.43330
+725     489.74     1.46670
+726     490.24     0.23333
+
+[727 rows x 2 columns]
+(22:55:02,980)root ---> DEBUG : Run the GetOverlap
+(22:55:02,980)root ---> DEBUG : Found overlap at 132.24
+(22:55:02,980)root ---> DEBUG : This is overlap 132.24
+(22:55:02,981)root ---> DEBUG : Run the ProcessData
+(22:55:02,984)root ---> DEBUG : Data is processed successfully
+(22:55:02,985)root ---> DEBUG : Run the FitProcess
+(22:55:03,260)root ---> DEBUG : Run the Plotting
+(22:55:03,276)matplotlib.font_manager ---> DEBUG : findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,277)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candaraz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,278)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Himalaya' (himalaya.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constan.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal 700 normal>) = 3.9713636363636367
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Lucida Sans Unicode' (l_10646.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (pala.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft JhengHei' (msjhbd.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constanz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sylfaen' (sylfaen.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambria.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Tai Le' (taile.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibri.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constani.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Malgun Gothic' (malgun.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuib.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (arialbi.ttf) italic normal 700 normal>) = 7.698636363636363
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft YaHei' (msyh.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothB.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Tai Le' (taileb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candarai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,279)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Print' (segoepr.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (palab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguisli.ttf) italic normal 350 normal>) = 11.0975
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Ebrima' (ebrimabd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Bahnschrift' (bahnschrift.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Script' (segoesc.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'SimSun-ExtB' (simsunb.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Yi Baiti' (msyi.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Tahoma' (tahomabd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft YaHei' (msyhl.ttc) normal normal 290 normal>) = 10.1545
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbelz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguibli.ttf) italic normal 900 normal>) = 11.525
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candara.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Symbol' (symbol.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambriaz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibril.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,280)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft JhengHei' (msjhl.ttc) normal normal 290 normal>) = 10.1545
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Gadugi' (gadugi.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbell.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft PhagsPa' (phagspa.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'HoloLens MDL2 Assets' (holomdl2.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe MDL2 Assets' (segmdl2.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Myanmar Text' (mmrtext.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candarali.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Malgun Gothic' (malgunsl.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguili.ttf) italic normal 300 normal>) = 11.145
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Mongolian Baiti' (monbaiti.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Nirmala UI' (NirmalaS.ttf) normal normal 350 normal>) = 10.0975
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Gadugi' (gadugib.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Malgun Gothic' (malgunbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbelb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (Sitka.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (arialbd.ttf) normal normal 700 normal>) = 6.698636363636363
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Nirmala UI' (Nirmala.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,281)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Ink Free' (Inkfree.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candaral.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibrii.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'MV Boli' (mvboli.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Marlett' (marlett.ttf) normal normal 500 normal>) = 10.145
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Franklin Gothic Medium' (framdit.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuisl.ttf) normal normal 350 normal>) = 10.0975
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comicz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal 700 normal>) = 4.971363636363637
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguisb.ttf) normal normal 600 normal>) = 10.24
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (ariblk.ttf) normal normal 900 normal>) = 6.888636363636364
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (palabi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comici.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbel.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (SitkaI.ttc) italic normal 400 normal>) = 11.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'MS Gothic' (msgothic.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguisbi.ttf) italic normal 600 normal>) = 11.24
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (SitkaZ.ttc) italic normal 700 normal>) = 11.335
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (palai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'MingLiU-ExtB' (mingliub.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Tahoma' (tahoma.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,282)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (SitkaB.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Nirmala UI' (NirmalaB.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI Symbol' (seguisym.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consolab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (courbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibriz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (times.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothM.ttc) normal normal 500 normal>) = 10.145
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Wingdings' (wingding.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Sans Serif' (micross.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Script' (segoescb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (courbi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibrib.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yandex-UI-Icons-Private' (yandex.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constanb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft YaHei' (msyhbd.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambriab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambriai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consolaz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,283)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Lucida Console' (lucon.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Leelawadee UI' (LeelaUIb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Ebrima' (ebrima.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consolai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft New Tai Lue' (ntailub.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguibl.ttf) normal normal 900 normal>) = 10.525
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuiz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibrili.ttf) italic normal 300 normal>) = 11.145
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Javanese Text' (javatext.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Leelawadee UI' (LeelawUI.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI Emoji' (seguiemj.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeui.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft New Tai Lue' (ntailu.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Leelawadee UI' (LeelUIsl.ttf) normal normal 350 normal>) = 10.0975
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI Historic' (seguihis.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,284)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft JhengHei' (msjh.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuil.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consola.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'SimSun' (simsun.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft PhagsPa' (phagspab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothL.ttc) normal normal 300 normal>) = 10.145
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Print' (segoeprb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuii.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Gabriola' (Gabriola.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbeli.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Myanmar Text' (mmrtextb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candarab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbelli.ttf) italic normal 300 normal>) = 11.145
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Franklin Gothic Medium' (framd.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothR.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,285)matplotlib.font_manager ---> DEBUG : findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('c:\\python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,312)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,313)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candaraz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Himalaya' (himalaya.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constan.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal 700 normal>) = 3.9713636363636367
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Lucida Sans Unicode' (l_10646.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (pala.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft JhengHei' (msjhbd.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constanz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sylfaen' (sylfaen.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambria.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Tai Le' (taile.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibri.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,314)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constani.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Malgun Gothic' (malgun.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuib.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (arialbi.ttf) italic normal 700 normal>) = 7.698636363636363
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft YaHei' (msyh.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothB.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Tai Le' (taileb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candarai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Print' (segoepr.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (palab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguisli.ttf) italic normal 350 normal>) = 11.0975
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Ebrima' (ebrimabd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Bahnschrift' (bahnschrift.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Script' (segoesc.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'SimSun-ExtB' (simsunb.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Yi Baiti' (msyi.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Tahoma' (tahomabd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,315)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft YaHei' (msyhl.ttc) normal normal 290 normal>) = 10.1545
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbelz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguibli.ttf) italic normal 900 normal>) = 11.525
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candara.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Symbol' (symbol.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambriaz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibril.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft JhengHei' (msjhl.ttc) normal normal 290 normal>) = 10.1545
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Gadugi' (gadugi.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbell.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft PhagsPa' (phagspa.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'HoloLens MDL2 Assets' (holomdl2.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe MDL2 Assets' (segmdl2.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Myanmar Text' (mmrtext.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candarali.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Malgun Gothic' (malgunsl.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguili.ttf) italic normal 300 normal>) = 11.145
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Mongolian Baiti' (monbaiti.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Nirmala UI' (NirmalaS.ttf) normal normal 350 normal>) = 10.0975
+(22:55:03,316)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Gadugi' (gadugib.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Malgun Gothic' (malgunbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbelb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (Sitka.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (arialbd.ttf) normal normal 700 normal>) = 6.698636363636363
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Nirmala UI' (Nirmala.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Ink Free' (Inkfree.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candaral.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibrii.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'MV Boli' (mvboli.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Marlett' (marlett.ttf) normal normal 500 normal>) = 10.145
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Franklin Gothic Medium' (framdit.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuisl.ttf) normal normal 350 normal>) = 10.0975
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comicz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal 700 normal>) = 4.971363636363637
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguisb.ttf) normal normal 600 normal>) = 10.24
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (ariblk.ttf) normal normal 900 normal>) = 6.888636363636364
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (palabi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,317)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comici.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbel.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (SitkaI.ttc) italic normal 400 normal>) = 11.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'MS Gothic' (msgothic.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguisbi.ttf) italic normal 600 normal>) = 11.24
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (SitkaZ.ttc) italic normal 700 normal>) = 11.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Palatino Linotype' (palai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'MingLiU-ExtB' (mingliub.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Tahoma' (tahoma.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Sitka Small' (SitkaB.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Nirmala UI' (NirmalaB.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI Symbol' (seguisym.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consolab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (courbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibriz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (times.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothM.ttc) normal normal 500 normal>) = 10.145
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Wingdings' (wingding.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft Sans Serif' (micross.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Script' (segoescb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Courier New' (courbi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,318)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibrib.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yandex-UI-Icons-Private' (yandex.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Constantia' (constanb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft YaHei' (msyhbd.ttc) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambriab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Cambria' (cambriai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consolaz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Lucida Console' (lucon.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Leelawadee UI' (LeelaUIb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Ebrima' (ebrima.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consolai.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft New Tai Lue' (ntailub.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (seguibl.ttf) normal normal 900 normal>) = 10.525
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuiz.ttf) italic normal 700 normal>) = 11.335
+(22:55:03,319)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Calibri' (calibrili.ttf) italic normal 300 normal>) = 11.145
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Javanese Text' (javatext.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Leelawadee UI' (LeelawUI.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI Emoji' (seguiemj.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeui.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft New Tai Lue' (ntailu.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Leelawadee UI' (LeelUIsl.ttf) normal normal 350 normal>) = 10.0975
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI Historic' (seguihis.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft JhengHei' (msjh.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuil.ttf) normal normal 300 normal>) = 10.145
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Consolas' (consola.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'SimSun' (simsun.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Microsoft PhagsPa' (phagspab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,320)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothL.ttc) normal normal 300 normal>) = 10.145
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe Print' (segoeprb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Segoe UI' (segoeuii.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Gabriola' (Gabriola.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbeli.ttf) italic normal 400 normal>) = 11.05
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Myanmar Text' (mmrtextb.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Candara' (Candarab.ttf) normal normal 700 normal>) = 10.335
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Corbel' (corbelli.ttf) italic normal 300 normal>) = 11.145
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Franklin Gothic Medium' (framd.ttf) normal normal 400 normal>) = 10.05
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: score(<Font 'Yu Gothic' (YuGothR.ttc) normal normal 400 normal>) = 10.05
+(22:55:03,321)matplotlib.font_manager ---> DEBUG : findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('c:\\python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+(22:55:03,503)root ---> DEBUG : Successfully saved graph
+(22:55:03,503)root ---> DEBUG : Fitting the 18092501R_pump_600nm_12mW_lp_22.5deg_probe_823nm_lp_11.7A_12.052021_v11
+(22:55:03,504)root ---> DEBUG : Run the ProcessFileFit
+(22:55:03,504)root ---> DEBUG : Run the ReadDataFile
+(22:55:03,504)root ---> DEBUG : Reading the data/18092501R_pump_600nm_12mW_lp_22.5deg_probe_823nm_lp_11.7A_12.052021_v11.dat
+(22:55:03,513)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.17    -1.40000
+1       127.66    -1.25000
+2       128.17    -0.30000
+3       128.66    -0.26667
+4       129.17    -0.58333
+..         ...         ...
+722     488.17    -0.65000
+723     488.66    -1.35000
+724     489.17    -1.40000
+725     489.66    -2.23330
+726     490.17    -1.05000
+
+[727 rows x 2 columns]
+(22:55:03,513)root ---> DEBUG : Run the GetOverlap
+(22:55:03,514)root ---> DEBUG : Found overlap at 132.165
+(22:55:03,514)root ---> DEBUG : This is overlap 132.165
+(22:55:03,514)root ---> DEBUG : Run the ProcessData
+(22:55:03,516)root ---> DEBUG : Data is processed successfully
+(22:55:03,516)root ---> DEBUG : Run the FitProcess
+(22:55:03,998)root ---> DEBUG : Run the Plotting
+(22:55:04,243)root ---> DEBUG : Successfully saved graph
+(22:55:04,244)root ---> DEBUG : Fitting the 18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v1
+(22:55:04,244)root ---> DEBUG : Run the ProcessFileFit
+(22:55:04,245)root ---> DEBUG : Run the ReadDataFile
+(22:55:04,245)root ---> DEBUG : Reading the data/18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v1.dat
+(22:55:04,257)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.28    -1.41670
+1       127.78    -1.23330
+2       128.28    -1.18330
+3       128.78    -1.36670
+4       129.28    -2.21670
+..         ...         ...
+722     488.28    -1.58330
+723     488.78    -0.78333
+724     489.28    -2.10000
+725     489.78    -1.03330
+726     490.28    -1.45000
+
+[727 rows x 2 columns]
+(22:55:04,258)root ---> DEBUG : Run the GetOverlap
+(22:55:04,258)root ---> DEBUG : Found overlap at 132.28
+(22:55:04,258)root ---> DEBUG : This is overlap 132.28
+(22:55:04,258)root ---> DEBUG : Run the ProcessData
+(22:55:04,260)root ---> DEBUG : Data is processed successfully
+(22:55:04,261)root ---> DEBUG : Run the FitProcess
+(22:55:04,374)root ---> DEBUG : Run the Plotting
+(22:55:04,606)root ---> DEBUG : Successfully saved graph
+(22:55:04,607)root ---> DEBUG : Fitting the 18092501R_pump_598nm_50mW_cp_probe_823nm_lp_11.7A_21042021_v11
+(22:55:04,607)root ---> DEBUG : Run the ProcessFileFit
+(22:55:04,608)root ---> DEBUG : Run the ReadDataFile
+(22:55:04,608)root ---> DEBUG : Reading the data/18092501R_pump_598nm_50mW_cp_probe_823nm_lp_11.7A_21042021_v11.dat
+(22:55:04,617)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       125.52     3.56670
+1       126.02     1.51670
+2       126.52     1.68330
+3       127.02     1.60000
+4       127.52     1.91670
+..         ...         ...
+725     488.02     1.41670
+726     488.52     1.23330
+727     489.02     1.16670
+728     489.52     0.90000
+729     490.02     0.91667
+
+[730 rows x 2 columns]
+(22:55:04,618)root ---> DEBUG : Run the GetOverlap
+(22:55:04,618)root ---> DEBUG : Found overlap at 128.52
+(22:55:04,618)root ---> DEBUG : This is overlap 128.52
+(22:55:04,618)root ---> DEBUG : Run the ProcessData
+(22:55:04,620)root ---> DEBUG : Data is processed successfully
+(22:55:04,621)root ---> DEBUG : Run the FitProcess
+(22:55:04,768)root ---> DEBUG : Run the Plotting
+(22:55:05,12)root ---> DEBUG : Successfully saved graph
+(22:55:05,12)root ---> DEBUG : Fitting the 18092502R_pump_600nm_50mW_cp_probe_823nm_lp_11.7A_30042021_v2
+(22:55:05,13)root ---> DEBUG : Run the ProcessFileFit
+(22:55:05,14)root ---> DEBUG : Run the ReadDataFile
+(22:55:05,14)root ---> DEBUG : Reading the data/18092502R_pump_600nm_50mW_cp_probe_823nm_lp_11.7A_30042021_v2.dat
+(22:55:05,23)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       125.02     -5.4667
+1       125.52     -4.8000
+2       126.02     -5.2333
+3       126.52     -5.3167
+4       127.02     -5.0333
+..         ...         ...
+726     488.02     -4.6000
+727     488.52     -4.8167
+728     489.02     -5.8167
+729     489.52     -4.6667
+730     490.02     -4.1500
+
+[731 rows x 2 columns]
+(22:55:05,23)root ---> DEBUG : Run the GetOverlap
+(22:55:05,24)root ---> DEBUG : Found overlap at 129.02
+(22:55:05,24)root ---> DEBUG : This is overlap 129.02
+(22:55:05,24)root ---> DEBUG : Run the ProcessData
+(22:55:05,26)root ---> DEBUG : Data is processed successfully
+(22:55:05,26)root ---> DEBUG : Run the FitProcess
+(22:55:05,169)root ---> DEBUG : Run the Plotting
+(22:55:05,401)root ---> DEBUG : Successfully saved graph
+(22:55:05,401)root ---> DEBUG : Fitting the 18092501R_pump_600nm_49mW_lp_45deg_probe_823nm_lp_11.7A_26042021_v11
+(22:55:05,402)root ---> DEBUG : Run the ProcessFileFit
+(22:55:05,403)root ---> DEBUG : Run the ReadDataFile
+(22:55:05,403)root ---> DEBUG : Reading the data/18092501R_pump_600nm_49mW_lp_45deg_probe_823nm_lp_11.7A_26042021_v11.dat
+(22:55:05,411)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0        125.5       -3.55
+1        126.0       -2.45
+2        126.5       -1.60
+3        127.0       -1.70
+4        127.5       -2.10
+..         ...         ...
+726      488.5       -0.95
+727      489.0       -0.10
+728      489.5       -1.75
+729      490.0       -1.90
+730      490.5       -1.15
+
+[731 rows x 2 columns]
+(22:55:05,412)root ---> DEBUG : Run the GetOverlap
+(22:55:05,412)root ---> DEBUG : Found overlap at 129.5
+(22:55:05,412)root ---> DEBUG : This is overlap 129.5
+(22:55:05,413)root ---> DEBUG : Run the ProcessData
+(22:55:05,414)root ---> DEBUG : Data is processed successfully
+(22:55:05,415)root ---> DEBUG : Run the FitProcess
+(22:55:05,502)root ---> DEBUG : Run the Plotting
+(22:55:05,745)root ---> DEBUG : Successfully saved graph
+(22:55:05,746)root ---> DEBUG : Fitting the 18092502R_pump_600nm_50mW_cp_probe_823nm_lp_11.7A_30042021_v1
+(22:55:05,747)root ---> DEBUG : Run the ProcessFileFit
+(22:55:05,747)root ---> DEBUG : Run the ReadDataFile
+(22:55:05,747)root ---> DEBUG : Reading the data/18092502R_pump_600nm_50mW_cp_probe_823nm_lp_11.7A_30042021_v1.dat
+(22:55:05,756)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0        124.9      3.7667
+1        125.4      3.1333
+2        125.9      3.6333
+3        126.4      4.3000
+4        126.9      3.6500
+..         ...         ...
+727      488.4      3.3500
+728      488.9      2.6333
+729      489.4      2.7667
+730      489.9      2.8167
+731      490.4      3.4500
+
+[732 rows x 2 columns]
+(22:55:05,757)root ---> DEBUG : Run the GetOverlap
+(22:55:05,757)root ---> DEBUG : Found overlap at 128.9
+(22:55:05,757)root ---> DEBUG : This is overlap 128.9
+(22:55:05,758)root ---> DEBUG : Run the ProcessData
+(22:55:05,759)root ---> DEBUG : Data is processed successfully
+(22:55:05,760)root ---> DEBUG : Run the FitProcess
+(22:55:06,129)root ---> DEBUG : Run the Plotting
+(22:55:06,324)root ---> DEBUG : Successfully saved graph
+(22:55:06,324)root ---> DEBUG : Fitting the 18092501R_pump_600nm_13mW_lp_67.5deg_probe_823nm_lp_11.7A_12.052021_v11
+(22:55:06,325)root ---> DEBUG : Run the ProcessFileFit
+(22:55:06,325)root ---> DEBUG : Run the ReadDataFile
+(22:55:06,325)root ---> DEBUG : Reading the data/18092501R_pump_600nm_13mW_lp_67.5deg_probe_823nm_lp_11.7A_12.052021_v11.dat
+(22:55:06,334)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.16     -1.5000
+1       127.66     -3.3167
+2       128.16     -3.7333
+3       128.66     -3.2667
+4       129.16     -2.4000
+..         ...         ...
+722     488.16     -2.5333
+723     488.66     -2.5833
+724     489.16     -2.8667
+725     489.66     -3.0333
+726     490.16     -3.4167
+
+[727 rows x 2 columns]
+(22:55:06,334)root ---> DEBUG : Run the GetOverlap
+(22:55:06,334)root ---> DEBUG : Found overlap at 132.16
+(22:55:06,334)root ---> DEBUG : This is overlap 132.16
+(22:55:06,335)root ---> DEBUG : Run the ProcessData
+(22:55:06,337)root ---> DEBUG : Data is processed successfully
+(22:55:06,337)root ---> DEBUG : Run the FitProcess
+(22:55:06,428)root ---> DEBUG : Run the Plotting
+(22:55:06,659)root ---> DEBUG : Successfully saved graph
+(22:55:06,659)root ---> DEBUG : Fitting the 18092501R_pump_600nm_31mW_lp_90deg_probe_823nm_lp_11.7A_28042021_v11
+(22:55:06,660)root ---> DEBUG : Run the ProcessFileFit
+(22:55:06,660)root ---> DEBUG : Run the ReadDataFile
+(22:55:06,660)root ---> DEBUG : Reading the data/18092501R_pump_600nm_31mW_lp_90deg_probe_823nm_lp_11.7A_28042021_v11.dat
+(22:55:06,668)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       130.07      39.083
+1       130.57      38.283
+2       131.07      38.500
+3       131.57      37.917
+4       132.07      47.500
+..         ...         ...
+716     488.07      41.333
+717     488.57      41.317
+718     489.07      40.950
+719     489.57      40.867
+720     490.07      41.100
+
+[721 rows x 2 columns]
+(22:55:06,669)root ---> DEBUG : Run the GetOverlap
+(22:55:06,669)root ---> DEBUG : Found overlap at 132.07
+(22:55:06,669)root ---> DEBUG : This is overlap 132.07
+(22:55:06,670)root ---> DEBUG : Run the ProcessData
+(22:55:06,671)root ---> DEBUG : Data is processed successfully
+(22:55:06,672)root ---> DEBUG : Run the FitProcess
+(22:55:06,859)root ---> DEBUG : Run the Plotting
+(22:55:07,56)root ---> DEBUG : Successfully saved graph
+(22:55:07,56)root ---> DEBUG : Fitting the 15100803Rplasm_pump_600nm_40mW_cp_probe_823nm_lp_11.7A_11052021_v11
+(22:55:07,57)root ---> DEBUG : Run the ProcessFileFit
+(22:55:07,58)root ---> DEBUG : Run the ReadDataFile
+(22:55:07,58)root ---> DEBUG : Reading the data/15100803Rplasm_pump_600nm_40mW_cp_probe_823nm_lp_11.7A_11052021_v11.dat
+(22:55:07,74)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       124.07      5.5167
+1       124.57      5.1833
+2       125.07      6.8500
+3       125.57      7.5333
+4       126.07      5.1833
+..         ...         ...
+728     488.07      1.6833
+729     488.57      5.1167
+730     489.07      3.6500
+731     489.57      1.9333
+732     490.07      4.1667
+
+[733 rows x 2 columns]
+(22:55:07,75)root ---> DEBUG : Run the GetOverlap
+(22:55:07,75)root ---> DEBUG : Found overlap at 129.07
+(22:55:07,75)root ---> DEBUG : This is overlap 129.07
+(22:55:07,76)root ---> DEBUG : Run the ProcessData
+(22:55:07,77)root ---> DEBUG : Data is processed successfully
+(22:55:07,78)root ---> DEBUG : Run the FitProcess
+(22:55:07,192)root ---> DEBUG : Run the Plotting
+(22:55:07,456)root ---> DEBUG : Successfully saved graph
+(22:55:07,457)root ---> DEBUG : Fitting the 15100803Rplasm_pump_600nm_20mW_lp_45_deg_probe_823nm_lp_11.7A_12052021_v11
+(22:55:07,457)root ---> DEBUG : Run the ProcessFileFit
+(22:55:07,458)root ---> DEBUG : Run the ReadDataFile
+(22:55:07,458)root ---> DEBUG : Reading the data/15100803Rplasm_pump_600nm_20mW_lp_45_deg_probe_823nm_lp_11.7A_12052021_v11.dat
+(22:55:07,467)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.23     -5.6333
+1       127.72     -5.4167
+2       128.23     -5.5500
+3       128.72     -5.3167
+4       129.23     -5.2833
+..         ...         ...
+722     488.22     -6.0833
+723     488.73     -5.9000
+724     489.22     -5.4000
+725     489.73     -5.6500
+726     490.23     -5.0833
+
+[727 rows x 2 columns]
+(22:55:07,467)root ---> DEBUG : Run the GetOverlap
+(22:55:07,468)root ---> DEBUG : Found overlap at 132.225
+(22:55:07,468)root ---> DEBUG : This is overlap 132.225
+(22:55:07,468)root ---> DEBUG : Run the ProcessData
+(22:55:07,470)root ---> DEBUG : Data is processed successfully
+(22:55:07,471)root ---> DEBUG : Run the FitProcess
+(22:55:07,594)root ---> DEBUG : Run the Plotting
+(22:55:07,803)root ---> DEBUG : Successfully saved graph
+(22:55:07,803)root ---> DEBUG : Fitting the 18092502R_pump_600nm_14mW_lp_22.5_deg_probe_823nm_lp_11.7A_12052021_v11
+(22:55:07,804)root ---> DEBUG : Run the ProcessFileFit
+(22:55:07,804)root ---> DEBUG : Run the ReadDataFile
+(22:55:07,804)root ---> DEBUG : Reading the data/18092502R_pump_600nm_14mW_lp_22.5_deg_probe_823nm_lp_11.7A_12052021_v11.dat
+(22:55:07,813)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.23     -43.267
+1       127.73     -44.583
+2       128.23     -43.667
+3       128.73     -43.850
+4       129.23     -43.300
+..         ...         ...
+722     488.23     -45.667
+723     488.73     -45.550
+724     489.23     -45.817
+725     489.73     -45.617
+726     490.23     -44.767
+
+[727 rows x 2 columns]
+(22:55:07,814)root ---> DEBUG : Run the GetOverlap
+(22:55:07,814)root ---> DEBUG : Found overlap at 132.23
+(22:55:07,814)root ---> DEBUG : This is overlap 132.23
+(22:55:07,815)root ---> DEBUG : Run the ProcessData
+(22:55:07,817)root ---> DEBUG : Data is processed successfully
+(22:55:07,817)root ---> DEBUG : Run the FitProcess
+(22:55:07,947)root ---> DEBUG : Run the Plotting
+(22:55:08,183)root ---> DEBUG : Successfully saved graph
+(22:55:08,184)root ---> DEBUG : Fitting the 18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v21
+(22:55:08,184)root ---> DEBUG : Run the ProcessFileFit
+(22:55:08,185)root ---> DEBUG : Run the ReadDataFile
+(22:55:08,185)root ---> DEBUG : Reading the data/18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v21.dat
+(22:55:08,193)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       128.11    -0.51667
+1       128.60    -0.18333
+2       129.10    -0.86667
+3       129.60     0.71667
+4       130.10    -0.15000
+..         ...         ...
+720     488.11    -0.68333
+721     488.60    -1.21670
+722     489.10     0.28333
+723     489.61     0.23333
+724     490.11    -0.18333
+
+[725 rows x 2 columns]
+(22:55:08,194)root ---> DEBUG : Run the GetOverlap
+(22:55:08,194)root ---> DEBUG : Found overlap at 132.105
+(22:55:08,194)root ---> DEBUG : This is overlap 132.105
+(22:55:08,195)root ---> DEBUG : Run the ProcessData
+(22:55:08,196)root ---> DEBUG : Data is processed successfully
+(22:55:08,197)root ---> DEBUG : Run the FitProcess
+(22:55:08,358)root ---> DEBUG : Run the Plotting
+(22:55:08,575)root ---> DEBUG : Successfully saved graph
+(22:55:08,575)root ---> DEBUG : Fitting the 18092502R_pump_600nm_23mW_lp_90_deg_probe_823nm_lp_11.7A_30042021_v2
+(22:55:08,576)root ---> DEBUG : Run the ProcessFileFit
+(22:55:08,576)root ---> DEBUG : Run the ReadDataFile
+(22:55:08,577)root ---> DEBUG : Reading the data/18092502R_pump_600nm_23mW_lp_90_deg_probe_823nm_lp_11.7A_30042021_v2.dat
+(22:55:08,586)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.25     -133.93
+1       127.75     -134.67
+2       128.25     -135.20
+3       128.75     -135.15
+4       129.25     -136.65
+..         ...         ...
+722     488.25     -138.78
+723     488.75     -137.42
+724     489.25     -138.55
+725     489.75     -135.30
+726     490.25     -136.07
+
+[727 rows x 2 columns]
+(22:55:08,586)root ---> DEBUG : Run the GetOverlap
+(22:55:08,586)root ---> DEBUG : Found overlap at 132.25
+(22:55:08,586)root ---> DEBUG : This is overlap 132.25
+(22:55:08,587)root ---> DEBUG : Run the ProcessData
+(22:55:08,588)root ---> DEBUG : Data is processed successfully
+(22:55:08,589)root ---> DEBUG : Run the FitProcess
+(22:55:08,719)root ---> DEBUG : Run the Plotting
+(22:55:08,912)root ---> DEBUG : Successfully saved graph
+(22:55:08,912)root ---> DEBUG : Fitting the 18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v2
+(22:55:08,913)root ---> DEBUG : Run the ProcessFileFit
+(22:55:08,913)root ---> DEBUG : Run the ReadDataFile
+(22:55:08,913)root ---> DEBUG : Reading the data/18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v2.dat
+(22:55:08,922)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.28     0.16667
+1       127.78    -0.85000
+2       128.28    -0.28333
+3       128.78    -1.88330
+4       129.28    -1.56670
+..         ...         ...
+722     488.28    -0.60000
+723     488.78    -0.90000
+724     489.28    -0.05000
+725     489.78    -0.58333
+726     490.28    -1.48330
+
+[727 rows x 2 columns]
+(22:55:08,922)root ---> DEBUG : Run the GetOverlap
+(22:55:08,923)root ---> DEBUG : Found overlap at 132.28
+(22:55:08,923)root ---> DEBUG : This is overlap 132.28
+(22:55:08,923)root ---> DEBUG : Run the ProcessData
+(22:55:08,925)root ---> DEBUG : Data is processed successfully
+(22:55:08,925)root ---> DEBUG : Run the FitProcess
+(22:55:09,284)root ---> DEBUG : Run the Plotting
+(22:55:09,494)root ---> DEBUG : Successfully saved graph
+(22:55:09,495)root ---> DEBUG : Fitting the 15100803Rplasm_pump_600nm_17mW_lp_0_deg_probe_823nm_lp_11.7A_12052021_v21
+(22:55:09,495)root ---> DEBUG : Run the ProcessFileFit
+(22:55:09,497)root ---> DEBUG : Run the ReadDataFile
+(22:55:09,497)root ---> DEBUG : Reading the data/15100803Rplasm_pump_600nm_17mW_lp_0_deg_probe_823nm_lp_11.7A_12052021_v21.dat
+(22:55:09,507)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0          NaN      153.32
+1       127.72      152.52
+2       128.22      154.42
+3       128.72      151.82
+4       129.22      151.42
+..         ...         ...
+722     488.22      170.58
+723     488.72      167.38
+724     489.22      169.45
+725     489.72      166.68
+726     490.22      167.05
+
+[727 rows x 2 columns]
+(22:55:09,507)root ---> DEBUG : Run the GetOverlap
+(22:55:09,508)root ---> DEBUG : Found overlap at 132.22
+(22:55:09,508)root ---> DEBUG : This is overlap 132.22
+(22:55:09,508)root ---> DEBUG : Run the ProcessData
+(22:55:09,510)root ---> DEBUG : Data is processed successfully
+(22:55:09,511)root ---> DEBUG : Run the FitProcess
+(22:55:09,600)root ---> DEBUG : Run the Plotting
+(22:55:09,871)root ---> DEBUG : Successfully saved graph
+(22:55:09,872)root ---> DEBUG : Fitting the 18092501R_pump_600nm_17mW_lp_0deg_probe_823nm_lp_11.7A_29042021_v11
+(22:55:09,872)root ---> DEBUG : Run the ProcessFileFit
+(22:55:09,873)root ---> DEBUG : Run the ReadDataFile
+(22:55:09,873)root ---> DEBUG : Reading the data/18092501R_pump_600nm_17mW_lp_0deg_probe_823nm_lp_11.7A_29042021_v11.dat
+(22:55:09,881)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.15      38.333
+1       127.64      38.000
+2       128.15      37.883
+3       128.65      38.350
+4       129.15      37.683
+..         ...         ...
+722     488.14      39.017
+723     488.64      38.600
+724     489.14      38.750
+725     489.64      39.117
+726     490.15      39.000
+
+[727 rows x 2 columns]
+(22:55:09,882)root ---> DEBUG : Run the GetOverlap
+(22:55:09,882)root ---> DEBUG : Found overlap at 132.145
+(22:55:09,882)root ---> DEBUG : This is overlap 132.145
+(22:55:09,883)root ---> DEBUG : Run the ProcessData
+(22:55:09,885)root ---> DEBUG : Data is processed successfully
+(22:55:09,885)root ---> DEBUG : Run the FitProcess
+(22:55:10,528)root ---> DEBUG : Run the Plotting
+(22:55:10,755)root ---> DEBUG : Successfully saved graph
+(22:55:10,755)root ---> DEBUG : Fitting the 18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v11
+(22:55:10,756)root ---> DEBUG : Run the ProcessFileFit
+(22:55:10,756)root ---> DEBUG : Run the ReadDataFile
+(22:55:10,756)root ---> DEBUG : Reading the data/18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v11.dat
+(22:55:10,766)root ---> DEBUG : data is 
+      Delay, mm    Signal, mV
+0       131.11  3.333300e-02
+1       131.11 -2.000000e-01
+2       131.11  5.000000e-01
+3       131.12 -1.333300e-01
+4       131.12 -8.000000e-01
+..         ...           ...
+776     134.99  4.500000e-01
+777     134.99  5.500000e-01
+778     135.00  2.000000e-01
+779     135.00  4.500000e-01
+780     135.00  4.625900e-18
+
+[781 rows x 2 columns]
+(22:55:10,767)root ---> DEBUG : Run the GetOverlap
+(22:55:10,767)root ---> ERROR : Can't process fit for 18092501R_pump_600nm_22mW_lp_45deg_probe_823nm_lp_11.7A_29042021_v11
+(22:55:10,767)root ---> ERROR : 'NoneType' object is not subscriptable
+(22:55:10,767)root ---> DEBUG : Skipping it
+(22:55:10,767)root ---> DEBUG : Fitting the 18092501R_pump_598nm_50mW_lp_45deg_probe_823nm_lp_11.7A_22042021_v11
+(22:55:10,768)root ---> DEBUG : Run the ProcessFileFit
+(22:55:10,768)root ---> DEBUG : Run the ReadDataFile
+(22:55:10,769)root ---> DEBUG : Reading the data/18092501R_pump_598nm_50mW_lp_45deg_probe_823nm_lp_11.7A_22042021_v11.dat
+(22:55:10,777)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       125.51        1.90
+1       126.01        0.35
+2       126.51        0.10
+3       127.01        0.25
+4       127.51       -0.10
+..         ...         ...
+725     488.01       -2.40
+726     488.51        0.05
+727     489.01       -3.45
+728     489.51       -4.40
+729     490.01       -3.50
+
+[730 rows x 2 columns]
+(22:55:10,778)root ---> DEBUG : Run the GetOverlap
+(22:55:10,778)root ---> DEBUG : Found overlap at 128.51
+(22:55:10,778)root ---> DEBUG : This is overlap 128.51
+(22:55:10,779)root ---> DEBUG : Run the ProcessData
+(22:55:10,781)root ---> DEBUG : Data is processed successfully
+(22:55:10,781)root ---> DEBUG : Run the FitProcess
+(22:55:10,872)root ---> DEBUG : Run the Plotting
+(22:55:11,88)root ---> DEBUG : Successfully saved graph
+(22:55:11,89)root ---> DEBUG : Fitting the 15100803Rplasm_pump_600nm_17mW_lp_0_deg_probe_823nm_lp_11.7A_12052021_v11
+(22:55:11,89)root ---> DEBUG : Run the ProcessFileFit
+(22:55:11,90)root ---> DEBUG : Run the ReadDataFile
+(22:55:11,90)root ---> DEBUG : Reading the data/15100803Rplasm_pump_600nm_17mW_lp_0_deg_probe_823nm_lp_11.7A_12052021_v11.dat
+(22:55:11,99)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.22      83.550
+1       127.72      83.333
+2       128.22      82.750
+3       128.72      82.667
+4       129.22      82.783
+..         ...         ...
+722     488.22      86.150
+723     488.72      84.867
+724     489.22      84.600
+725     489.72      85.400
+726     490.22      86.250
+
+[727 rows x 2 columns]
+(22:55:11,100)root ---> DEBUG : Run the GetOverlap
+(22:55:11,100)root ---> DEBUG : Found overlap at 132.22
+(22:55:11,100)root ---> DEBUG : This is overlap 132.22
+(22:55:11,100)root ---> DEBUG : Run the ProcessData
+(22:55:11,102)root ---> DEBUG : Data is processed successfully
+(22:55:11,103)root ---> DEBUG : Run the FitProcess
+(22:55:11,889)root ---> DEBUG : Run the Plotting
+(22:55:12,113)root ---> DEBUG : Successfully saved graph
+(22:55:12,113)root ---> DEBUG : Fitting the 18092501R_pump_600nm_50mW_lp_0deg_probe_823nm_lp_11.7A_26042021_v11
+(22:55:12,114)root ---> DEBUG : Run the ProcessFileFit
+(22:55:12,115)root ---> DEBUG : Run the ReadDataFile
+(22:55:12,115)root ---> DEBUG : Reading the data/18092501R_pump_600nm_50mW_lp_0deg_probe_823nm_lp_11.7A_26042021_v11.dat
+(22:55:12,124)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       125.91        2.20
+1       126.41        0.10
+2       126.91       -0.35
+3       127.41       -1.20
+4       127.91        0.20
+..         ...         ...
+725     488.41        1.30
+726     488.91       -0.60
+727     489.41       -1.60
+728     489.91        0.45
+729     490.41        0.50
+
+[730 rows x 2 columns]
+(22:55:12,125)root ---> DEBUG : Run the GetOverlap
+(22:55:12,125)root ---> DEBUG : Found overlap at 128.91
+(22:55:12,125)root ---> DEBUG : This is overlap 128.91
+(22:55:12,126)root ---> DEBUG : Run the ProcessData
+(22:55:12,128)root ---> DEBUG : Data is processed successfully
+(22:55:12,128)root ---> DEBUG : Run the FitProcess
+(22:55:12,293)root ---> DEBUG : Run the Plotting
+(22:55:12,520)root ---> DEBUG : Successfully saved graph
+(22:55:12,521)root ---> DEBUG : Fitting the 18092501R_pump_600nm_8mW_lp_22.5deg_probe_823nm_lp_11.7A_12.052021_v11
+(22:55:12,522)root ---> DEBUG : Run the ProcessFileFit
+(22:55:12,522)root ---> DEBUG : Run the ReadDataFile
+(22:55:12,522)root ---> DEBUG : Reading the data/18092501R_pump_600nm_8mW_lp_22.5deg_probe_823nm_lp_11.7A_12.052021_v11.dat
+(22:55:12,531)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.17    -2.00000
+1       127.66    -1.73330
+2       128.17    -2.06670
+3       128.66    -1.46670
+4       129.17    -0.33333
+..         ...         ...
+722     488.17    -0.80000
+723     488.66    -2.21670
+724     489.17    -2.58330
+725     489.66    -2.31670
+726     490.17    -1.05000
+
+[727 rows x 2 columns]
+(22:55:12,532)root ---> DEBUG : Run the GetOverlap
+(22:55:12,532)root ---> DEBUG : Found overlap at 132.165
+(22:55:12,532)root ---> DEBUG : This is overlap 132.165
+(22:55:12,532)root ---> DEBUG : Run the ProcessData
+(22:55:12,534)root ---> DEBUG : Data is processed successfully
+(22:55:12,534)root ---> DEBUG : Run the FitProcess
+(22:55:13,249)root ---> DEBUG : Run the Plotting
+(22:55:13,516)root ---> DEBUG : Successfully saved graph
+(22:55:13,516)root ---> DEBUG : Fitting the 18092502R_pump_600nm_15mW_lp_0_deg_probe_823nm_lp_11.7A_04052021_v2
+(22:55:13,517)root ---> DEBUG : Run the ProcessFileFit
+(22:55:13,517)root ---> DEBUG : Run the ReadDataFile
+(22:55:13,517)root ---> DEBUG : Reading the data/18092502R_pump_600nm_15mW_lp_0_deg_probe_823nm_lp_11.7A_04052021_v2.dat
+(22:55:13,526)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.28      116.72
+1       127.78      116.85
+2       128.28      116.45
+3       128.78      116.50
+4       129.28      118.65
+..         ...         ...
+722     488.28      116.92
+723     488.78      117.10
+724     489.28      116.82
+725     489.78      119.00
+726     490.28      118.88
+
+[727 rows x 2 columns]
+(22:55:13,527)root ---> DEBUG : Run the GetOverlap
+(22:55:13,527)root ---> DEBUG : Found overlap at 132.28
+(22:55:13,527)root ---> DEBUG : This is overlap 132.28
+(22:55:13,528)root ---> DEBUG : Run the ProcessData
+(22:55:13,529)root ---> DEBUG : Data is processed successfully
+(22:55:13,530)root ---> DEBUG : Run the FitProcess
+(22:55:14,124)root ---> DEBUG : Run the Plotting
+(22:55:14,367)root ---> DEBUG : Successfully saved graph
+(22:55:14,367)root ---> DEBUG : Fitting the 18092502R_pump_600nm_16mW_lp_67.5_deg_probe_823nm_lp_11.7A_12052021_v11
+(22:55:14,368)root ---> DEBUG : Run the ProcessFileFit
+(22:55:14,368)root ---> DEBUG : Run the ReadDataFile
+(22:55:14,368)root ---> DEBUG : Reading the data/18092502R_pump_600nm_16mW_lp_67.5_deg_probe_823nm_lp_11.7A_12052021_v11.dat
+(22:55:14,377)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.23     -77.850
+1       127.72     -78.433
+2       128.22     -76.583
+3       128.72     -80.050
+4       129.22     -78.033
+..         ...         ...
+722     488.23     -82.483
+723     488.73     -82.333
+724     489.22     -82.917
+725     489.73     -83.700
+726     490.23     -83.200
+
+[727 rows x 2 columns]
+(22:55:14,379)root ---> DEBUG : Run the GetOverlap
+(22:55:14,379)root ---> DEBUG : Found overlap at 132.225
+(22:55:14,379)root ---> DEBUG : This is overlap 132.225
+(22:55:14,379)root ---> DEBUG : Run the ProcessData
+(22:55:14,381)root ---> DEBUG : Data is processed successfully
+(22:55:14,382)root ---> DEBUG : Run the FitProcess
+(22:55:14,570)root ---> DEBUG : Run the Plotting
+(22:55:14,800)root ---> DEBUG : Successfully saved graph
+(22:55:14,801)root ---> DEBUG : Fitting the 18092502R_pump_600nm_15mW_lp_0_deg_probe_823nm_lp_11.7A_04052021_v1
+(22:55:14,802)root ---> DEBUG : Run the ProcessFileFit
+(22:55:14,803)root ---> DEBUG : Run the ReadDataFile
+(22:55:14,803)root ---> DEBUG : Reading the data/18092502R_pump_600nm_15mW_lp_0_deg_probe_823nm_lp_11.7A_04052021_v1.dat
+(22:55:14,816)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.28      150.57
+1       127.78      149.23
+2       128.28      147.75
+3       128.78      149.80
+4       129.28      151.25
+..         ...         ...
+722     488.28      151.92
+723     488.78      151.60
+724     489.28      149.22
+725     489.78      149.47
+726     490.28      152.15
+
+[727 rows x 2 columns]
+(22:55:14,816)root ---> DEBUG : Run the GetOverlap
+(22:55:14,817)root ---> DEBUG : Found overlap at 132.28
+(22:55:14,817)root ---> DEBUG : This is overlap 132.28
+(22:55:14,817)root ---> DEBUG : Run the ProcessData
+(22:55:14,821)root ---> DEBUG : Data is processed successfully
+(22:55:14,822)root ---> DEBUG : Run the FitProcess
+(22:55:15,122)root ---> DEBUG : Run the Plotting
+(22:55:15,341)root ---> DEBUG : Successfully saved graph
+(22:55:15,341)root ---> DEBUG : Fitting the 18092502R_pump_600nm_23mW_lp_90_deg_probe_823nm_lp_11.7A_30042021_v1
+(22:55:15,342)root ---> DEBUG : Run the ProcessFileFit
+(22:55:15,343)root ---> DEBUG : Run the ReadDataFile
+(22:55:15,343)root ---> DEBUG : Reading the data/18092502R_pump_600nm_23mW_lp_90_deg_probe_823nm_lp_11.7A_30042021_v1.dat
+(22:55:15,352)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.23     -55.500
+1       127.72     -56.917
+2       128.22     -55.150
+3       128.72     -54.750
+4       129.22     -54.433
+..         ...         ...
+722     488.23     -60.067
+723     488.72     -59.550
+724     489.22     -59.067
+725     489.72     -58.717
+726     490.23     -58.400
+
+[727 rows x 2 columns]
+(22:55:15,353)root ---> DEBUG : Run the GetOverlap
+(22:55:15,353)root ---> DEBUG : Found overlap at 132.225
+(22:55:15,353)root ---> DEBUG : This is overlap 132.225
+(22:55:15,354)root ---> DEBUG : Run the ProcessData
+(22:55:15,356)root ---> DEBUG : Data is processed successfully
+(22:55:15,356)root ---> DEBUG : Run the FitProcess
+(22:55:15,484)root ---> DEBUG : Run the Plotting
+(22:55:15,733)root ---> DEBUG : Successfully saved graph
+(22:55:15,734)root ---> DEBUG : Fitting the 18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v3
+(22:55:15,734)root ---> DEBUG : Run the ProcessFileFit
+(22:55:15,735)root ---> DEBUG : Run the ReadDataFile
+(22:55:15,735)root ---> DEBUG : Reading the data/18092502R_pump_600nm_22mW_lp_45_deg_probe_823nm_lp_11.7A_04052021_v3.dat
+(22:55:15,745)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.28     -14.450
+1       127.78     -15.817
+2       128.28     -15.700
+3       128.78     -15.083
+4       129.28     -14.367
+..         ...         ...
+722     488.28     -16.933
+723     488.78     -14.267
+724     489.28     -15.300
+725     489.78     -16.083
+726     490.28     -16.133
+
+[727 rows x 2 columns]
+(22:55:15,745)root ---> DEBUG : Run the GetOverlap
+(22:55:15,746)root ---> DEBUG : Found overlap at 132.28
+(22:55:15,746)root ---> DEBUG : This is overlap 132.28
+(22:55:15,746)root ---> DEBUG : Run the ProcessData
+(22:55:15,748)root ---> DEBUG : Data is processed successfully
+(22:55:15,749)root ---> DEBUG : Run the FitProcess
+(22:55:17,450)root ---> DEBUG : Run the Plotting
+(22:55:17,656)root ---> DEBUG : Successfully saved graph
+(22:55:17,657)root ---> DEBUG : Fitting the 18092502R_pump_600nm_20mW_lp_90_deg_probe_823nm_lp_11.7A_04052021_v3
+(22:55:17,657)root ---> DEBUG : Run the ProcessFileFit
+(22:55:17,658)root ---> DEBUG : Run the ReadDataFile
+(22:55:17,658)root ---> DEBUG : Reading the data/18092502R_pump_600nm_20mW_lp_90_deg_probe_823nm_lp_11.7A_04052021_v3.dat
+(22:55:17,667)root ---> DEBUG : data is 
+      Delay, mm  Signal, mV
+0       127.28     -185.10
+1       127.78     -186.77
+2       128.28     -184.70
+3       128.78     -187.17
+4       129.28     -188.15
+..         ...         ...
+722     488.28     -196.73
+723     488.78     -197.97
+724     489.28     -195.17
+725     489.78     -195.15
+726     490.28     -192.75
+
+[727 rows x 2 columns]
+(22:55:17,667)root ---> DEBUG : Run the GetOverlap
+(22:55:17,667)root ---> DEBUG : Found overlap at 132.28
+(22:55:17,668)root ---> DEBUG : This is overlap 132.28
+(22:55:17,668)root ---> DEBUG : Run the ProcessData
+(22:55:17,670)root ---> DEBUG : Data is processed successfully
+(22:55:17,670)root ---> DEBUG : Run the FitProcess
+(22:55:17,918)root ---> DEBUG : Run the Plotting
+(22:55:18,135)root ---> DEBUG : Successfully saved graph
+(22:55:18,136)root ---> INFO : Finished

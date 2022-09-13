@@ -1,2 +1,2 @@
 # PumpProbeFitting
-Code for fitting RQC laboratory data. just look at Interface.ipynb
+Code for fitting RQC laboratory data. Just look at Interface.ipynb
